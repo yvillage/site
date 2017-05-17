@@ -43,7 +43,11 @@ body {
 .grid_12 {
   display: inline;
   float: left;
+<<<<<<< HEAD
   margin-left: 12px;
+=======
+  margin-left:12px;
+>>>>>>> master
   margin-right: 12px;
 }
 
