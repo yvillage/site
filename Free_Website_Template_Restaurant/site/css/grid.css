@@ -43,8 +43,8 @@ body {
 .grid_12 {
   display: inline;
   float: left;
-  margin-left:12px;
-  margin-right: 12px;
+  margin-left:20px;
+  margin-right: 20px;
 }
 
 .push_1, .pull_1,
