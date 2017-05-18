@@ -14,7 +14,7 @@
 */
 
 body {
-  min-width: 960px;
+  min-width: 100%;
 }
 
 /* `Container
@@ -23,7 +23,7 @@ body {
 .container_12 {
   margin-left: auto;
   margin-right: auto;
-  width: 960px;
+  width: 100%;
 }
 
 /* `Grid >> Global
@@ -42,7 +42,7 @@ body {
 .grid_11,
 .grid_12 {
   display: inline;
-  float: left;
+  float: right;
   margin-left: 12px;
   margin-right: 12px;
 }
