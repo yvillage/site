@@ -10,6 +10,12 @@
      <link href="css/validetta.css" rel="stylesheet" type="text/css" media="screen" >
      <link rel="stylesheet" href="css/sweetalert2.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+         <style>
+         
+               
+         
+         </style>
      
          <style>
             
@@ -24,12 +30,36 @@
              .btns{
                  text-align: center
              }
-             
-             .socials{
-                 position: absolute;
-                 margin: 10px;
-                 top: 0;
-             }
+
+        #socials{ 
+             position: absolute; 
+             left: 25px;  
+         }  
+ 
+         
+        .fa {
+          font-size: 25px;
+          text-align: center;
+          width: 45px;
+          height: 45px;
+          padding: 10px; 
+          border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white; 
+        }
+
+
+        .fa-youtube {
+          background: #bb0000;
+          color: white; 
+        }
              
          </style>
      <script src="js/jquery.js"></script>
@@ -47,9 +77,10 @@
 <!--==============================header=================================-->
  <header> 
      
-      <div class="socials">
-              <a href="https://www.facebook.com/yardenavillage/" target="_blank"></a> 
-          </div>
+    <div id="socials">
+        <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
+     </div> 
      
   <div class="container_12">
       
