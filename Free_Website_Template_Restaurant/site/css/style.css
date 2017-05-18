@@ -186,6 +186,9 @@ a.btn.m1 {
 }
 .wrapper, .extra_wrapper {
 	overflow: hidden;
+    direction: rtl;
+   
+    
 }
 .clear {
 	float: none !important;
@@ -260,7 +263,7 @@ header h1 a img {
 }
 
 .content.page1 h2 {
-	font-size: 25px;
+	font-size: 50px;
 	padding-top: 43px;
 	margin-bottom: 19px;
 	color: #5D0400;
@@ -542,6 +545,7 @@ margin-top: 13px;
 .news .extra_wrapper {
 	position: relative;
 	top: -4px;
+   
 }
 
 .news a.btn {
