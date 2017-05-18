@@ -3,7 +3,9 @@ $(function(){
       $('#exm1').validetta({
                    onValid: function(event){
                         event.preventDefault();
-
+                       
+                            $('.loader').show();
+                           
                             var name = $('#name').val();
                             var email = $('#email').val();
                             var phone = $('#phone').val();
@@ -29,12 +31,13 @@ $(function(){
                                 data: JSON.stringify(myobject),
                                 success: function (data) {
                                     
-//                                    alert(data.name);
-                                         swal(
-                                          'תודה, ניצור איתך קשר בהקדם',
-                                          '',
-                                          'success'
-                                        )
+                                   $('.loader').hide();
+                                    
+                                     swal(
+                                      'תודה, ניצור איתך קשר בהקדם',
+                                      '',
+                                      'success'
+                                    )
                                 }
                             });
                         },
