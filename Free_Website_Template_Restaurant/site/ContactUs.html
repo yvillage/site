@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
-     <title>צור קשר | ירדנה ויליג'</title>
+     <title>צור קשר |ירדנה ויליג'</title>
      <meta charset="utf-8">
-     <link rel="icon" href="images/favicon.ico">
-     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="icon" href="images/zimmerfavicon.ico">
+     <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/form.css">
      <link href="css/validetta.css" rel="stylesheet" type="text/css" media="screen" >
      <link rel="stylesheet" href="css/sweetalert2.min.css">
+     <link rel="stylesheet" href="css/loader.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
          <style>
          
                
@@ -28,14 +29,29 @@
              }
              
              .btns{
-                 text-align: center
+                text-align: center;
              }
-
+             
+             .loader{
+                margin: auto;
+                 margin-top: 10px;
+                 display: none;
+             }
+             
         #socials{ 
              position: absolute; 
              left: 25px;  
          }  
  
+         #contact{
+             width: %100;
+            /* center a div insie another div*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
          
         .fa {
           font-size: 25px;
@@ -70,8 +86,9 @@
      <script type="text/javascript" src="js/validetta.js"></script>
      <script type="text/javascript" src="js/validettaLang-tr-TR.js"></script>
      <script type="text/javascript" src="js/contactus.js"></script>
-        
-     </head>
+    
+     
+    </head>
      <body>
        <div class="main">
 <!--==============================header=================================-->
@@ -91,15 +108,20 @@
          <div class="menu_block">
            <nav  class="" >
             <ul class="sf-menu">
-                   <li class="current"><a href="Contact.html">צור קשר</a></li>
-                   <li><a href="index-5.html">אודות</a></li>
-                   <li><a href="index-2.html">המלצות אורחים</a></li>
-                   <li><a href="index-3.html">חבילת ספא</a></li>
-                   <li><a href="index-4.html">הבריכה והחוץ</a></li>
-                   <li class="with_ul"><a href="index-1.html">הבקתות</a><ul>
-                            <li><a href="#">בקתה 1</a></li>
-                            <li><a href="#">בקתה 2</a></li>
-                            <li><a href="#">בקתה 3</a></li>
+         <li class="with_ul current"><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+                   <li><a href="AboutUs.html">אודות</a></li>
+                   <li><a href="Recommends.html">המלצות אורחים</a></li>
+                <li><a href="Around.html">מה בסביבה</a><ul>
+                            <li><a href="b1.html">מסעדות</a></li>
+                            <li><a href="b2.html">טיולים</a></li>
+                            <li><a href="b3.html">בילויים</a></li>
+                   </ul></li>
+                   <li><a href="Spa.html">חבילת ספא</a></li>
+                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                   <li><a href="index.html">הבקתות</a><ul>
+                            <li><a href="b1.html">בקתה 1</a></li>
+                            <li><a href="b2.html">בקתה 2</a></li>
+                            <li><a href="b3.html">בקתה 3</a></li>
                    </ul></li>
                  
                  </ul>
@@ -114,8 +136,13 @@
 
 <div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
   <div class="container_12">
-    <div class="grid_6">
-      <h2>Find Us</h2>
+      
+      <div id="contact">
+
+    
+          
+              <div class="grid_6">
+      <h2>מצא אותנו</h2>
             <div class="map">
             <figure class="img_inner">
                       <iframe
@@ -128,24 +155,26 @@
                </figure>
               <address>
                             <dl>
-                                <dt><p>The Company Name Inc.<br>
-                                    8901 Marmora Road,<br>
-                                    Glasgow, D04 89GR.</p>
+                                <dt><p>ירדנה ויליג' צימרים בגליל העליון.<br>
+                                    מושב שזור<br>
+                                    משק 61
+                                   </p>
                                 </dt>
-                                <dd><span>Freephone:</span>+1 800 559 6580</dd>
-                                <dd><span>Telephone:</span>+1 800 603 6035</dd>
-                                <dd><span>FAX:</span>+1 800 889 9898</dd>
+                                <dd><span>יואב:&nbsp</span>054-3311530</dd>
+                                <dd><span>ירדנה:&nbsp</span>050-6372527</dd>
+                                <dd><span>פקס:&nbsp</span>04-9987148</dd>
                             </dl>
                          </address>
  
           </div>
     </div>
-    <div class="grid_5 prefix_1">
-      <h2>Contact Us</h2>
+
+          <div class="grid_5 prefix_1">
+      <h2>צור קשר</h2>
       <form id="exm1">
           <div class="success_wrapper">
-          <div class="success">Contact form submitted!<br>
-          <strong>We will be in touch soon.</strong> </div></div>
+          <div class="success">טופס יצירת קשר!<br>
+          <strong>נשמח לראותכם בין אורחינו!</strong> </div></div>
           <fieldset>
           <label class="name">
           <input type="text" class="form-control" id="name" placeholder="שם" dir="rtl" data-validetta="regExp[regname],required">
@@ -162,34 +191,43 @@
           
           <textarea class="form-control" rows="6" id="msg" placeholder="הודעה" dir="rtl" data-validetta="required"></textarea> 
           
-          <div class="clear"></div>
+         
           <div class="btns"> <button type="submit" class="btn btn-default">שלח</button>
-          <div class="clear"></div>
+        <div class="loader"></div>
            </div></fieldset></form>
+              <div class="info">
+                  <br>
+				</div>
     </div>
+          
+  </div>
     <div class="clear"></div>
     <div class="bottom_block">
       <div class="grid_6">
-        <h3>Follow Us</h3>
-    
+        <h3>עקבו אחרינו</h3>
+          <div class="socials">
+          <a href="https://www.facebook.com/yardenavillage/"></a>
+          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk"></a>
+        </div>
+     
         <nav><ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li ><a href="index-1.html">About Us</a></li>
-                   <li><a href="index-2.html">Menu</a></li>
-                   <li><a href="index-3.html">Portfolio</a></li>
-                   <li><a href="index-4.html">News </a></li>
-                   <li class="current"><a href="index-5.html">Contacts</a></li>
+                   <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                   <li ><a href="AboutUs.html">קצת עלינו</a></li>
+                   <li><a href="Recommends.html">המלצות אורחים</a></li>
+                   <li><a href="Spa.html">חבילת ספא</a></li>
+                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                   <li><a href="index.html">בית</a></li>
                  </ul></nav>
       </div>
       <div class="grid_6">
-        <h3>Email Updates</h3>
-        <p class="col1">Join our digital mailing list and get news<br> deals and be first to know about events</p>
+          <h3>פרטי יצירת קשר</h3>
+        <p class="col1">לקבלת מידע נוסף, השאירו פרטים ונשמח לחזור אליכם בהקדם</p>
         <form id="newsletter">
-                  <div class="success">Your subscribe request has been sent!</div>
+                  <div class="success">כתובת האיימל אומתה!</div>
                   <label class="email">
-                       <input type="email" value="Enter e-mail address" >
-                       <a href="#" class="btn" data-type="submit">subscribe</a> 
-                        <span class="error">*This is not a valid email address.</span>
+                       <input type="email" value="כתובת איימל" >
+                       <a href="#" class="btn" data-type="submit">שלח</a> 
+                        <span class="error">* כתובת האיימל אינה תקינה!</span>
                   </label> 
               </form> 
           </div>
