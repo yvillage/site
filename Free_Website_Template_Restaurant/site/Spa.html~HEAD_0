@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
-     <title>המלצות |ירדנה ויליג'</title>
+     <title>ספא | ירדנה ויליג'</title>
      <meta charset="utf-8">
-    <link rel="icon" href="images/zimmerfavicon.ico">
+  <link rel="icon" href="images/zimmerfavicon.ico">
      <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/prettyPhoto.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
          <style>
          
@@ -47,6 +48,16 @@
      <script src="js/superfish.js"></script>
      <script src="js/jquery.easing.1.3.js"></script>
      <script src="js/sForm.js"></script>
+     <script src="js/jquery.prettyPhoto.js"></script>
+     <script>
+     
+      
+      
+        $(document).ready(function(){
+    $("a[data-gal^='prettyPhoto']").prettyPhoto({theme:'facebook'});
+    
+    });      
+     </script>
      <!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -57,7 +68,6 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <link rel="stylesheet" media="screen" href="css/ie.css">
-
     <![endif]-->
      </head>
      <body>
@@ -69,107 +79,13 @@
         <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
      </div> 
      
-   <div class="container_12">
+    <div class="container_12">
       
     <div class="grid_12">
          
     <h1><a href="index.html"><img src="images/logo.png" alt="EXTERIOR"></a> </h1>
     
-         <div class="menu_block">
-           <nav  class="" >
-            <ul class="sf-menu">
-           <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
-                   <li><a href="AboutUs.html">אודות</a></li>
-                   <li class="with_ul current"><a href="Recommends.html">המלצות אורחים</a></li>
-                   <li><a href="Around.html">מה בסביבה</a><ul>
-                            <li><a href="b1.html">מסעדות</a></li>
-                            <li><a href="b2.html">טיולים</a></li>
-                            <li><a href="b3.html">בילויים</a></li>
-                   </ul></li>
-                   <li><a href="Spa.html">חבילת ספא</a></li>
-                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                   <li><a href="index.html">הבקתות</a><ul>
-                            <li><a href="b1.html">בקתה 1</a></li>
-                            <li><a href="b2.html">בקתה 2</a></li>
-                            <li><a href="b3.html">בקתה 3</a></li>
-                   </ul></li>
-                 
-                 </ul>
-              </nav>
-           <div class="clear"></div>
-           </div>
-           <div class="clear"></div>
-      </div>
-    </div>
-</header>
-<!--=======content================================-->
-
-<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
-  <div class="container_12">
-    <div class="grid_6">
-      <h2>Our Menu</h2>
-      <p class="col2 inn1"><a href="#">Integer non metus justo ac posuere turpis. Integer iaculis porta metus, in aliquam orci vehicula sit amet. Suspendisse turpis mauris, laoreet ac aliquet a lobortis in massa. Etiam tortor metus, tincidunt vel congue etu</a></p>
-      <p>Aenean sed nunc lorem, nec ornare nibh. Pellentesque vitae sem odio. Vivamus vulputate est eget elit rutrum a consectetur justo aliquet. Aliquam hendrerit consectetur mi, non molestie massa venenatis quis. Integer aliquet euismod nisl, et sagittis sem scelerisque sit amet. Etiam dapibus, tellus et imperdiet pulvinar, urna nunc consectetur enim, in </p>
-      <div class="menu">
-        <div class="grid_3 alpha">
-          <img src="images/page3_img1.jpg" alt="" class="img_inner">
-          <h3><a href="#">Donec</a></h3>
-        </div>
-        <div class="grid_3 omega">
-          <img src="images/page3_img2.jpg" alt="" class="img_inner">
-          <h3><a href="#">Murtyio</a></h3>
-        </div>
-        <div class="grid_3 alpha">
-          <img src="images/page3_img3.jpg" alt="" class="img_inner">
-          <h3><a href="#">Holity as Polfh</a></h3>
-        </div>
-        <div class="grid_3 omega">
-          <img src="images/page3_img4.jpg" alt="" class="img_inner">
-          <h3><a href="#">Kiperty</a></h3>
-        </div>
-        <div class="grid_3 alpha">
-          <img src="images/page3_img5.jpg" alt="" class="img_inner">
-          <h3 class="mb0"><a href="#">Gyloit</a></h3>
-        </div>
-        <div class="grid_3 omega">
-          <img src="images/page3_img6.jpg" alt="" class="img_inner">
-          <h3 class="mb0"><a href="#">Liotymer</a></h3>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="grid_5 prefix_1">
-      <h2 class="head2">Chef’s Secrets</h2>
-      <ul class="list l1">
-        <li><a href="#"> Maecenas malesuada sapien </a></li>
-        <li><a href="#">Etiam tortor metus, tincidunt vel gtcongue </a></li>
-        <li><a href="#">Pellentesque vitae sem odio</a></li>
-        <li><a href="#"> Lorem ipsum dolor sit amet, con </a></li>
-        <li><a href="#">Provide preferred vendor's list</a></li>
-        <li><a href="#">Vivamus vulputate est eget elit s tellus et </a></li>
-        <li><a href="#"> Nam blandit metus eget pretium </a></li>
-        <li><a href="#"> Aaecenas koalesuada sapien </a></li>
-        <li><a href="#">Ttiam tortor metus tiklioidunt vel </a></li>
-        <li><a href="#">Eellentesque vitae sem odiokhoy</a></li>
-        <li><a href="#"> Okoem ipsum dolor sit amet df </a></li>
-        <li><a href="#">Rovide preferred vendor's listko frefrwq hu</a></li>
-        <li><a href="#">Vvamus vulputate est eet elit </a></li>
-        <li class="mb0"><a href="#"> Am blandit metus eet pretium </a></li>
-      </ul>
-      <h2 class="head1">Wine List</h2>
-      <ul class="list">
-        <li><a href="#"> Koalesuada  libero </a></li>
-        <li><a href="#">Ortor metus vel </a></li>
-        <li><a href="#">Eellentesque vitae sem</a></li>
-        <li><a href="#"> Ipsum </a></li>
-        <li><a href="#">Rovide preferred </a></li>
-        <li><a href="#">Vulputate est </a></li>
-        <li><a href="#"> Bandit metus </a></li>
-      </ul>
-    </div>
-    
-    <div class="clear"></div>
-          <div class="menu_block">
+     <div class="menu_block">
            <nav  class="" >
             <ul class="sf-menu">
                    <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
@@ -187,13 +103,54 @@
                             <li><a href="b2.html">בקתה 2</a></li>
                             <li><a href="b3.html">בקתה 3</a></li>
                    </ul></li>
-                
                  
                  </ul>
               </nav>
+           <div class="clear"></div>
+           </div>
+           <div class="clear"></div>
+      </div>
+    </div>
+</header>
+<!--=======content================================-->
+
+<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Portfolio</h2>
+    </div>
+    <div class="clear"></div>
+    <div class="portfolio">
+      <div class="grid_6"><a href="images/big3.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img1.jpg" alt=""></a></div>
+      <div class="grid_6"><a href="images/big2.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img2.jpg" alt=""></a></div>
+      <div class="grid_6"><a href="images/big4.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img3.jpg" alt=""></a></div>
+      <div class="grid_6"><a href="images/big1.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img4.jpg" alt=""></a></div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom_block">
+      <div class="grid_6">
+       <h3>עקבו אחרינו</h3>
+          <div class="socials">
+          <a href="https://www.facebook.com/yardenavillage/"></a>
+          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk"></a>
+        </div>
+     
+        <nav><ul>
+                   <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                   <li ><a href="AboutUs.html">קצת עלינו</a></li>
+            <li><a href="Recommends.html">המלצות אורחים</a></li>
+                <li><a href="Around.html">מה בסביבה</a><ul>
+                            <li><a href="b1.html">מסעדות</a></li>
+                            <li><a href="b2.html">טיולים</a></li>
+                            <li><a href="b3.html">בילויים</a></li>
+                   </ul></li>
+                   <li><a href="Spa.html">חבילת ספא</a></li>
+                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                   <li><a href="index.html">בית</a></li>
+                 </ul></nav>
       </div>
       <div class="grid_6">
-        <h3>פרטי יצירת קשר</h3>
+          <h3>פרטי יצירת קשר</h3>
         <p class="col1">לקבלת מידע נוסף, השאירו פרטים ונשמח לחזור אליכם בהקדם</p>
         <form id="newsletter">
                   <div class="success">כתובת האיימל אומתה!</div>
@@ -210,7 +167,6 @@
   </div>
 </div>
 <!--==============================footer=================================-->
-
  
 </body>
 </html>

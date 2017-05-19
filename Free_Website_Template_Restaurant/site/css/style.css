@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h2 {
-	font-size: 30px;
+	font-size: 35px;
 	line-height: 30px;
 }
 
@@ -407,7 +407,7 @@ header h1 a img {
 }
 
 .socials a {
-	background: url(../images/socials.png) 0 0 no-repeat;
+	background: url(../images/facebookfooter.png) 0 0 no-repeat;
 	width: 26px;
 	float: left;
 	display: block;
@@ -424,7 +424,7 @@ header h1 a img {
 }
 
 .socials a:first-child+a {
-	background: url(../images/socials.png) -38px 0 no-repeat;
+	background: url(../images/youtubefooter.png) -1px 0 no-repeat;
 }
 
 .socials a:first-child+a+a {
@@ -459,6 +459,7 @@ header h1 a img {
 }
 
 
+/*
 .prev1 {
 	background: url(../images/prevnext.png) 0 bottom no-repeat;
 	display: block;
@@ -482,6 +483,7 @@ header h1 a img {
 	height: 30px;
 	margin-top: 8px;
 }
+*/
 
 .next1:hover {
 	background-position: right 0;
