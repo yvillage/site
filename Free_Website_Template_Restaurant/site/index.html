@@ -28,7 +28,7 @@
              float: right;
              font-family: 'Varela Round', sans-serif;
              line-height:2.0;
-             font-size: 20px
+             font-size: 21px
          }
          
          #head{
@@ -46,13 +46,6 @@
             font-size: 15px;
             font-weight: bold;
          } 
-          
-/*
-         #info{
-             line-height:2.0;
-             font-size: 25px
-         }
-*/
          #socials{ 
              
              position: absolute; 
@@ -82,7 +75,20 @@
         .fa-youtube {
           background: #bb0000;
           color: white; 
+        
         }
+         
+         #footer{
+                 min-height: 100%;
+    min-width: 320px;
+             direction: rtl;  
+             text-align: right;
+             color: #3b5998;
+             font-size: 18px;
+             font-family: 'DerorMFW';
+                 padding-bottom: 10px;
+     
+         }
          
      </style>
      <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
@@ -149,16 +155,22 @@
          <div class="menu_block">
            <nav  class="" >
             <ul class="sf-menu">
-                   <li><a class="menutext" href="index-5.html">צור קשר</a></li>
-                   <li><a href="index-5.html">אודות</a></li>
-                   <li><a href="index-2.html">המלצות אורחים</a></li>
-                   <li><a href="index-3.html">חבילת ספא</a></li>
-                   <li><a href="index-4.html">הבריכה והחוץ</a></li>
-                   <li  class="with_ul current"><a href="index-1.html">הבקתות</a><ul>
+                   <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+                   <li><a href="AboutUs.html">אודות</a></li>
+                   <li><a href="Recommends.html">המלצות אורחים</a></li>
+                 <li><a href="Around.html">מה בסביבה</a><ul>
+                            <li><a href="b1.html">מסעדות</a></li>
+                            <li><a href="b2.html">טיולים</a></li>
+                            <li><a href="b3.html">בילויים</a></li>
+                   </ul></li>
+                   <li><a href="Spa.html">חבילת ספא</a></li>
+                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                   <li  class="current"><a href="index.html">הבקתות</a><ul>
                             <li><a href="b1.html">בקתה 1</a></li>
                             <li><a href="b2.html">בקתה 2</a></li>
                             <li><a href="b3.html">בקתה 3</a></li>
                    </ul></li>
+                
                  
                  </ul>
               </nav>
@@ -173,11 +185,9 @@
         <div class="camera_caption fadeFromBottom"><p class="slideshow-text">בריכה חלומית</p></div>
     </div>
     
-<!--
     <div data-thumb="images/slideshow-images/thumbnails/thumb1.jpg" data-src="images/slideshow-images/pic1.jpg" data-fx="topLeftBottomRight">
         <div class="camera_caption fadeFromBottom"><p class="slideshow-text">חצר ונוף הרים</p></div>
     </div>
--->
     
      <div data-thumb="images/slideshow-images/thumbnails/thumb5.jpg" data-src="images/slideshow-images/pic5.jpg" data-fx="mosaicSpiral">
         <div class="camera_caption fadeFromBottom"><p class="slideshow-text">ג'קוזי מפנק</p></div>
@@ -227,7 +237,7 @@
 ארוחת בוקר כפרית עשירה תוגש עד הבקתות- בתשלום נפרד ובהזמנה מראש
               ניתן להזמין עיסויים מקצועיים בתשלום נפרד. <br>
 
-            <a href="#" class="btn">להזמנות ליחצו כאן!</a>
+            <a href="tel:054-3311530" class="btn" target="_blank">להזמנות לחצו כאן!</a>
           </div>
           <div class="clear"></div>
         </div>
@@ -297,30 +307,62 @@
     <div class="clear"></div>
     <div class="bottom_block">
       <div class="grid_6">
-        <h3>Follow Us</h3>
+        <h3>עקבו אחרינו</h3>
+          <div class="socials">
+          <a href="https://www.facebook.com/yardenavillage/"></a>
+          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk"></a>
+        </div>
      
         <nav><ul>
-                   <li class="current"><a href="index.html">Home</a></li>
-                   <li ><a href="index-1.html">About Us</a></li>
-                   <li><a href="index-2.html">Menu</a></li>
-                   <li><a href="index-3.html">Portfolio</a></li>
-                   <li><a href="index-4.html">News </a></li>
-                   <li><a href="index-5.html">Contacts</a></li>
+                   <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                   <li ><a href="AboutUs.html">קצת עלינו</a></li>
+                   <li><a href="Recommends.html">המלצות אורחים</a></li>
+                   <li><a href="Spa.html">חבילת ספא</a></li>
+                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                   <li><a href="index.html">בית</a></li>
                  </ul></nav>
       </div>
+      
+<!--
+       
+            <form method="POST" enctype="multipart/form-data" class="contactForm" id="contactForm">
+					<div class="BoxTitle"><h3>פרטי יצירת קשר</h3></div>
+					<div class="title">לקבלת מידע נוסף, השאירו פרטים ונשמח לחזור אליכם בהקדם</div>
+					<div class="field">
+						<input type="text" name="fullName" id="orderName" placeholder="שם">
+					</div>
+					<div class="field">
+						<input type="text" name="phone" id="orderPhone" placeholder="טלפון">
+					</div>
+					<div class="field">
+						<input type="text" name="email" id="orderEmail" placeholder="כתובת אימייל">
+					</div>
+					<div class="field">
+						<input type="button" onclick="sendContact('contactForm')" value="שלח" class="submit">
+					</div>
+				</form>
+				<a href="yardenavillageltd@gmail.com" class="mailContact">yardenavillageltd@gmail.com</a>
+-->
+			
+
+        
+        
       <div class="grid_6">
-        <h3>Email Updates</h3>
-        <p class="col1">Join our digital mailing list and get news<br> deals and be first to know about events</p>
+        <h3>פרטי יצירת קשר</h3>
+        <p class="col1">לקבלת מידע נוסף, השאירו פרטים ונשמח לחזור אליכם בהקדם</p>
         <form id="newsletter">
-                  <div class="success">Your subscribe request has been sent!</div>
+                  <div class="success">כתובת האיימל אומתה!</div>
                   <label class="email">
-                       <input type="email" value="Enter e-mail address" >
-                       <a href="#" class="btn" data-type="submit">subscribe</a> 
-                        <span class="error">*This is not a valid email address.</span>
+                       <input type="email" value="כתובת איימל" >
+                       <a href="#" class="btn" data-type="submit">שלח</a> 
+                        <span class="error">* כתובת האיימל אינה תקינה!</span>
                   </label> 
               </form> 
           </div>
+
       </div>
+        <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
+
       <div class="clear"></div>
     </div>
   </div>
@@ -328,4 +370,5 @@
 
          
 </body>
+
 </html>
