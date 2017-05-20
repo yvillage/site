@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
-     <title>בקתה 2 |ירדנה ויליג'</title>
+     <title>בקתה 1 | ירדנה ויליג'</title>
      <meta charset="utf-8">
-    <link rel="icon" href="images/zimmerfavicon.ico">
+     <link rel="icon" href="images/zimmerfavicon.ico">
      <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
      <link rel="stylesheet" href="css/style.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/viewbox.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/bottom.css"> 
          <style>
          
-                #socials{ 
+       .pic{
+            margin: 5px;
+        } 
              
+         
+         header{
+             z-index: 2;
+         }
+             
+        .viewbox-image{
+            z-index: 1     
+         }
+             
+         .owl-nav{
+         text-align: center;
+        -webkit-tap-highlight-color: transparent;
+
+        }
+        
+        .owl-next:hover{
+             background: gray;
+        }  
+        .owl-prev:hover{
+             background: gray;
+        }
+        
+        .owl-next{ 
+             color: #FFF;
+            font-size: 14px;
+            margin: 5px;
+            padding: 4px 7px;
+            background: #D6D6D6;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        .owl-prev{
+             color: #FFF;
+            font-size: 14px;
+            margin: 5px;
+            padding: 4px 7px;
+            background: #D6D6D6;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+         #socials{ 
              position: absolute; 
              left: 25px;  
-             
          }  
- 
+
+         .owl-carousel{
+            margin-top: 30px; 
+         }
          
         .fa {
           font-size: 25px;
@@ -42,47 +95,25 @@
         }
          
          </style>
-     <script src="js/jquery.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/superfish.js"></script>
      <script src="js/jquery.easing.1.3.js"></script>
-     <script src="js/sForm.js"></script>
-     <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+     <script src="js/owl.carousel.min.js"></script> 
+     <script src="js/jquery.viewbox.min.js"></script>
+         
      <script>
 
-      
-     $(window).load (
-    function(){$('.carousel2').carouFredSel({auto: false,prev: '.prev1',next: '.next1', width: 410, items: {
-      visible : {min: 1,
-       max: 1
-},
-height: 'auto',
- width: 410,
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+                nav: true
+          });   
+            
+            $('.image-link').viewbox(); 
+          
+        });    
 
-    }, responsive: false, 
-    
-    scroll: 1, 
-    
-    mousewheel: false,
-    
-    swipe: {onMouse: false, onTouch: false}});
-    
-    
-    });      
-
-     </script>
-     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link rel="stylesheet" media="screen" href="css/ie.css">
-
-    <![endif]-->
+     </script>  
      </head>
      <body>
        <div class="main">
@@ -103,7 +134,7 @@ height: 'auto',
          <div class="menu_block">
            <nav  class="" >
             <ul class="sf-menu">
-                <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+        <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
                    <li><a href="AboutUs.html">אודות</a></li>
                    <li><a href="Recommends.html">המלצות אורחים</a></li>
                    <li><a href="Spa.html">חבילת ספא</a></li>
@@ -126,48 +157,23 @@ height: 'auto',
 
 <div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
   <div class="container_12">
-    <div class="grid_5">
-      <h2>About Us</h2>
-      <img src="images/page2_img1.jpg" alt="" class="img_inner">
-      <p class="col1">Curabitur in turpisju massa. Donec et nibh non turpis pellentesque suscipit eget. </p>
-      <p>Ghfgop Maecnas cursus fringilla sagittis. Donec eu felis purus, iaculis fringilla ipsum. Inte ger non nulla sem, eget volutpat augue. Curabitur in turpisju massa. Donec et nibh non turpis pellentesque suscipit eget.  </p>
-      Donec eu felis purus, iaculis fringilla ipsum. Integer non. nulla sem, eget volutpat augue. Curabitur in turpisju massa. Donec et nibh non turpis pellentesque suscipit eget vel odio. Sed tempus orci tempus libero suscipit elementum. Aliquam consectetur. Ghfgop Maecnas cursus.       <br>
-      <a href="#" class="btn m1">More</a>
-    </div>
-    <div class="grid_5 prefix_2">
-      <h2>Testimonials</h2>
-      <ul class="carousel2">
-        <li>
-          <blockquote>
-            <img src="images/page2_img2.png" alt="">
-            <div class="extra_wrapper">
-              <div class="title">Sara &amp; Kevin <br> Jonson</div>
-            </div>
-             <div class="clear"></div>
-            <p class="col1"><a href="#">Euismod pellentesque in dui. Semper, enim eget eleifend faucibus, sem libero gravida erat, sit amet viverra dui nisl non nulla. Pellentesque in dui euismod.        </a></p>
-            <p>Curabitur felis purus, iaculis fringi. ipsum. Integer non nulla sem, eget volutpat augue. Ghfgop Maecnas cursus fringilla sagittis. Donec eu felis purus, iaculis fringilla ipsum. Inte ger non nulla sem, eget volutpat augue. Curabitur in turpisju massa. Donec et nibh non turpis pellentesque suscipit eget vel odio.  Aliquam consectetur. Fringilla ipsum.           </p>
-            <p>
-Ringilla ipsum. Donec et nibh non turpis pellentesque suscipit eget vel odio. Sed tempus orci tempus libero suscipit elementum. Aliquam consectetur. Ghfgop Maecnas cursus fringilla sagittis. Donec eu felis purus, iaculis fringi. ipsum. Integer non nulla sem, eget volutpat augue. Ghfgop pelle ntesque suscipit eget consectetur.</p>
-          </blockquote>
-        </li>
-        <li>
-          <blockquote>
-            <img src="images/page2_img2-1.png" alt="">
-            <div class="extra_wrapper">
-              <div class="title">Moira &amp; Brett<br>
-       Clark</div>
-            </div>
-            <div class="clear"></div>
-            <p class="col1">Pellentesque in dui euismod. Aliquam semper, enim eget eleifend faucibus, sem libero gravida erat, sit amet viverra dui nisl non nulla. Pellentesque in dui euismod nibh suscipi. </p>
-            <p>Donec eu felis purus, iaculis fringi. ipsum. Integer non nulla sem, eget volutpat augue. Ghfgop Maecnas cursus fringilla sagittis. Donec eu felis purus, iaculis fringilla ipsum. Inte ger non nulla sem, eget volutpat augue. Curabitur in turpisju massa. Donec et nibh non turpis pellentesque suscipit eget vel odio.  Aliquam consectetur. Ghfgop Maecnas cursus frin.</p>
-            <p>Curabitur in turpisju massa. Donec et nibh non turpis pellen tesque suscipit eget vel odio. Sed tempus orci tempus libero suscipit elementum. Aliquam consectetur. Ghfgop Maecnas cursus fringilla sagittis. Donec eu felis purus, iaculis fringi. ipsum. Integer non nulla sem, eget volutpat augue. Ghfgop Maecnas cursus fringilla sagittis.</p>
-          </blockquote>
-        </li>
-      </ul>
-     
-      <a href="#" class="next1"></a>
-       <a href="#" class="prev1"></a>
-    </div>
+    
+       
+      
+        <div class="owl-carousel">
+              <div class="pic"> <a href="images/slideshow-images/pic1.JPG" class="image-link"> <img src="images//slideshow-images/pic1.JPG"> </a></div>
+              <div class="pic"> <a href="images//slideshow-images/pic2.JPG" class="image-link"> <img src="images//slideshow-images/pic2.JPG"> </a></div>
+              <div class="pic"> <a href="images//slideshow-images/pic3.JPG" class="image-link"> <img src="images//slideshow-images/pic3.JPG"> </a></div>
+              <div class="pic"> <a href="images//slideshow-images/pic4.JPG" class="image-link"> <img src="images//slideshow-images/pic4.JPG"> </a></div>
+              <div class="pic"> <a href="images//slideshow-images/pic5.JPG" class="image-link"> <img src="images//slideshow-images/pic5.JPG"> </a></div>
+              <div class="pic"> <a href="images//slideshow-images/pic6.JPG" class="image-link"> <img src="images//slideshow-images/pic6.JPG"> </a></div>    
+        </div>
+      
+      
+      
+      
+      
+    
     <div class="clear"></div>
     <div class="grid_12">
       <div class="hor_separator hor1"></div>
@@ -192,47 +198,44 @@ Ringilla ipsum. Donec et nibh non turpis pellentesque suscipit eget vel odio. Se
         <p class="col1"><a href="#">Alan Soares</a></p>Donec necllentesque tempus quam nec porta. Donec nec lorem enim. Aenean velit velit, faucibus sed porta quis, gt er semper ac elit. Aliquam hendrerit mo lestie turpis condimentum tristique. Fty aliquam malesuada orci a massa yht. semper sed interdum.  
       </div>
     </div>
-    <div class="clear"></div>
-    <div class="bottom_block">
-      <div class="grid_6">
-     <h3>עקבו אחרינו</h3>
-          <div class="socials">
-          <a href="https://www.facebook.com/yardenavillage/"></a>
-          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk"></a>
+      
+      <!--==============================footer=================================-->
+
+         <div class="clear"></div>
+         <div>   
+            <div class="bottom_block">
+
+                 <div class="socials_bottom">
+
+                     <div>
+
+                         <a href="waze://?ll=32.932429,35.352057" target="_blank"><img src="images/waze.png"></a>
+                         <a href="https://www.facebook.com/yardenavillage/" target="_blank"><img src="images/facebookfooter.png"></a>
+                         <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" target="_blank"><img src="images/youtubefooter.png"></a>
+                         <h3>עקבו אחרינו</h3>
+                     </div>
+                 </div>
+
+                        <div id="bottom_nav">
+                             <ul>
+                               <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                               <li><a href="AboutUs.html">קצת עלינו</a></li>
+                               <li><a href="Recommends.html">המלצות אורחים</a></li>
+                               <li><a href="Spa.html">חבילת ספא</a></li>
+                               <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                               <li><a href="index.html">בית</a></li>
+                             </ul> 
+                        </div>
+              </div>
+               <footer>
+                   <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
+               </footer>
+
         </div>
      
-        <nav><ul>
-                   <li class="current"><a href="ContactUs.html">צור קשר</a></li>
-                   <li ><a href="AboutUs.html">קצת עלינו</a></li>
-                   <li><a href="Recommends.html">המלצות אורחים</a></li>
-            <li><a href="Around.html">מה בסביבה</a><ul>
-                            <li><a href="b1.html">מסעדות</a></li>
-                            <li><a href="b2.html">טיולים</a></li>
-                            <li><a href="b3.html">בילויים</a></li>
-                   </ul></li>
-                   <li><a href="Spa.html">חבילת ספא</a></li>
-                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                   <li><a href="index.html">בית</a></li>
-                 </ul></nav>
-      </div>
-      <div class="grid_6">
-        <h3>פרטי יצירת קשר</h3>
-        <p class="col1">לקבלת מידע נוסף, השאירו פרטים ונשמח לחזור אליכם בהקדם</p>
-        <form id="newsletter">
-                  <div class="success">כתובת האיימל אומתה!</div>
-                  <label class="email">
-                       <input type="email" value="כתובת איימל" >
-                       <a href="#" class="btn" data-type="submit">שלח</a> 
-                        <span class="error">* כתובת האיימל אינה תקינה!</span>
-                  </label> 
-              </form> 
-          </div>
-      </div>
-      <div class="clear"></div>
     </div>
   </div>
 </div>
-<!--==============================footer=================================-->
  
 </body>
 </html>
