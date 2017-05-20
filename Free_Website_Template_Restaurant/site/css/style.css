@@ -367,6 +367,7 @@ header h1 a img {
 	font-size: 12px;
 	padding-bottom: 10px;
 	overflow: hidden;
+    text-align: center;
 }
 
 .bottom_block h3 {

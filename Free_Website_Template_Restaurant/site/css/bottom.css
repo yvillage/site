@@ -1,0 +1,17 @@
+ #bottom_nav li:not(:first-child):before {
+     content: " | ";
+ } 
+         
+ .socials_bottom{
+         margin-top: 30px;
+         margin-bottom: 15px;
+ }
+
+ .socials_bottom h3{
+         display: inline;
+         margin-left: 15px;
+ }
+
+ #bottom_nav li{
+           display: inline-block;
+ }
