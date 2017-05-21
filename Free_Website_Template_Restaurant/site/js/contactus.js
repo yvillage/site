@@ -45,7 +45,7 @@ $(function(){
                         regExp: {
                             regname: {
                                 pattern: /^[\sA-Za-zא-ת]*$/,
-                                errorMessage: '!הכנס/י שם תקין'
+                                errorMessage: 'הכנס/י שם תקין!'
                             }
                         },
                     },
