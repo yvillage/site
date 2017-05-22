@@ -26,8 +26,7 @@ body {
 	font: 14px/18px  Arial, Helvetica, sans-serif;
 	color:#826660;
 	position:relative;
-	min-width:960px;
-/*	padding-top: 27px;*/
+	min-width:540px;
  	background: #f2f0f0;
 
 }
@@ -212,11 +211,11 @@ a.btn.m1 {
 
 header {
 	display: block;
-	padding-top: 16px;
+	padding-top: 5px;
 	position: relative;
 	z-index: 999;
-	background: #f2f0f0 ;
-	padding-bottom: 40px;
+    background: #ffffb3 ;
+	padding-bottom: 60px;
 	border-bottom: 1px solid #dddbdb;
 	box-shadow: 0 1px 5px #ccc;
 }
