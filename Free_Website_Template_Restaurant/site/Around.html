@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="stylesheet" href="css/viewbox.css">
+     <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
      <link rel="stylesheet" href="css/bottom.css"> 
          <style>
@@ -63,13 +64,20 @@
         
          #socials{ 
              position: absolute; 
-             left: 25px;  
+             left: 25px;      
+             display:flex; 
          }  
 
+         #socials .fa{ 
+             margin-top: 20px;
+             margin-left: 5px;
+         }
+
          #logo{
-             width:250px;
-             height:250x;
-             margin-bottom: 10px;
+             width:45%;
+             height:220px; 
+             margin-left: 10px;
+             margin-left: 55px;
          }
              
          .owl-carousel{
@@ -99,7 +107,17 @@
           background: #bb0000;
           color: white; 
         }
-         
+             
+         #bottom_nav li{
+             display: inline-block;
+             font-size: 15px;
+         }
+             
+         .sf-menu li a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
+         }
+             
          </style>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
@@ -117,6 +135,9 @@
             
             $('.image-link').viewbox(); 
           
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
         });    
 
      </script>  
@@ -129,7 +150,7 @@
      <div id="socials">
         <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
         <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
-      <a href="index.html"><img src="images/logo.png" id="logo" alt="EXTERIOR"></a>  
+      <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt" id="logo" alt="EXTERIOR"></a>  
      </div> 
      
     <div class="container_12">
@@ -239,14 +260,14 @@
                      </ul> 
                 </div>
       </div>
-       <footer>
-           <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
-       </footer>
+        <footer style="font-size:13px;">
+            'כל הזכויות שמורות © לירדנה ויליג  
+        </footer>
  
       </div>
     </div>
   </div>
 </div>
- 
+         <script src='js/tilt.jquery.min.js'></script> 
 </body>
 </html>

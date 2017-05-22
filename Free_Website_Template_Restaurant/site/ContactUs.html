@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="css/sweetalert2.min.css">
      <link rel="stylesheet" href="css/loader.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          
          <style>
@@ -40,6 +41,7 @@
         
          #bottom_nav li{
                display: inline-block;
+               font-size: 15px;
          }
             
              fieldset{
@@ -60,15 +62,22 @@
                  display: none;
              }
              
-        #socials{ 
+         #socials{ 
              position: absolute; 
-             left: 25px;  
+             left: 25px;      
+             display:flex; 
          }  
+
+         #socials .fa{ 
+             margin-top: 20px;
+             margin-left: 5px;
+         }
          
          #logo{
-             width:250px;
-             height:250x;
-             margin-bottom: 10px;
+             width:45%;
+             height:220px; 
+             margin-left: 10px;
+             margin-left: 55px;
          }
  
          #contact{
@@ -105,8 +114,13 @@
           color: white; 
         }
              
+         .sf-menu > li > a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
+         }
+             
          </style>
-     <script src="js/jquery.js"></script>
+     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="js/sweetalert2.min.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/superfish.js"></script>
@@ -114,7 +128,17 @@
      <script type="text/javascript" src="js/validetta.js"></script>
      <script type="text/javascript" src="js/validettaLang-tr-TR.js"></script>
      <script type="text/javascript" src="js/contactus.js"></script>
-    
+        <script>
+            
+            $(function(){
+               
+                $('.js-tilt').tilt({
+                    scale: 1.1
+                })
+                
+            });
+            
+         </script>
      
     </head>
      <body>
@@ -125,7 +149,7 @@
     <div id="socials">
         <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
         <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
-            <a href="index.html"><img src="images/logo.png" id="logo" alt="EXTERIOR"></a>  
+        <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt" id="logo" alt="EXTERIOR"></a>  
      </div> 
      
   <div class="container_12">
@@ -135,8 +159,8 @@
     
          <div class="menu_block">
            <nav  class="" >
-            <ul class="sf-menu">
-         <li class="with_ul current"><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+               <ul class="sf-menu">
+                    <li class="with_ul current"><a class="menutext" href="ContactUs.html">צור קשר</a></li>
                    <li><a href="AboutUs.html">אודות</a></li>
                    <li><a href="Recommends.html">המלצות אורחים</a></li>
                 <li><a href="Around.html">מה בסביבה</a><ul>
@@ -232,7 +256,7 @@
      
 <!--==============================footer=================================-->
 
-           <div>  
+       <div>  
 
             <div class="clear"></div>
             <div class="bottom_block">
@@ -247,25 +271,22 @@
                      </div>
                  </div>
 
-                        <div id="bottom_nav">
-                             <ul>
-                               <li class="current"><a href="ContactUs.html">צור קשר</a></li>
-                               <li><a href="AboutUs.html">קצת עלינו</a></li>
-                               <li><a href="Recommends.html">המלצות אורחים</a></li>
-                               <li><a href="Spa.html">חבילת ספא</a></li>
-                               <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                               <li><a href="index.html">בית</a></li>
-                             </ul> 
-                        </div>
+                <div id="bottom_nav"> 
+                       <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                       <li><a href="AboutUs.html">קצת עלינו</a></li>
+                       <li><a href="Recommends.html">המלצות אורחים</a></li>
+                       <li><a href="Spa.html">חבילת ספא</a></li>
+                       <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                       <li><a href="index.html">בית</a></li>
+                     </ul> 
+                </div>
+                
               </div>
-               <footer>
-                   <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
-               </footer>
-
-          </div>
-        </div>
+           <footer style="font-size:13px;">
+               'כל הזכויות שמורות © לירדנה ויליג  
+           </footer>
     </div>
-</div>
-         
+         <script src='js/tilt.jquery.min.js'></script> 
+
 </body>
 </html> 

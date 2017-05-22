@@ -11,6 +11,7 @@
      <link rel='stylesheet' href='css/camera.css'>
      <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     
      <style>
          
          @media only screen and (max-width: 365px) {
@@ -31,7 +32,8 @@
          }
          
          .menu_block{
-            min-width: 300px;    
+            min-width: 300px;  
+            font-family: 'Varela Round', sans-serif;
          }
                   
         #camera_wrap{
@@ -123,10 +125,20 @@
              margin-left: 15px;
          }
         
-         #bottom_nav li{
+         #bottom_nav li{ 
                display: inline-block;
          }
          
+         #bottom_nav{
+             font-size: 15px;
+         }
+         
+         
+         .sf-menu li a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
+         }
+      
      </style>
      <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
@@ -134,6 +146,7 @@
      <script src="js/sForm.js"></script>
      <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
      <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+     <script type='text/javascript' src='js/tilt.jquery.min.js'></script> 
      <script src="js/camera.min.js"></script>
          <script>
             $(function(){
@@ -143,21 +156,13 @@
                     thumbnails: true, 
 			      }); 
                 
+                  $('.js-tilt').tilt({
+                    scale: 1.1
+                  })
+                
             });
          </script>
-     
-     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link rel="stylesheet" media="screen" href="css/ie.css">
-
-    <![endif]-->
+         
      </head>
      <body>
    
@@ -175,13 +180,13 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  
-         
+               
+
      <div id="socials" >
          <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook"  target="_blank"></a>
          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube"  style="vertical-align: middle"  target="_blank"></a>
-         <a href="index.html"><img src="images/logo2.png" class="deviceWidth2" id="logo" alt="EXTERIOR"></a>
+         <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt deviceWidth2" id="logo" alt="EXTERIOR"></a>
      </div>
-     
      <div class="container_12 deviceWidth3">
     
          <div class="grid_12 deviceWidth3">
@@ -191,7 +196,7 @@
          <div class="menu_block menu_resp">
            <nav >
             <ul class="sf-menu">
-                   <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+                <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
                    <li><a href="AboutUs.html">אודות</a></li>
                    <li><a href="Recommends.html">המלצות אורחים</a></li>
                  <li><a href="Around.html">מה בסביבה</a><ul>
@@ -308,15 +313,15 @@
                      </ul> 
                 </div>
       </div>
-       <footer>
-           <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
+       <footer style="font-size:13px;">
+           'כל הזכויות שמורות © לירדנה ויליג  
        </footer>
  
     </div>
   </div>
 </div>
 
-         
+ 
 </body>
 
 </html>

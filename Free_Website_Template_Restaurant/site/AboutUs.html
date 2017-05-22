@@ -6,20 +6,28 @@
      <link rel="icon" href="images/zimmerfavicon.ico">
      <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
      <link rel="stylesheet" href="css/style.css">
+         <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
          <style>
          
-        #socials{ 
+         #socials{ 
              position: absolute; 
-             left: 25px;  
+             left: 25px;      
+             display:flex; 
          }  
- 
-         #logo{
-             width:250px;
-             height:250x;
-             margin-bottom: 10px;
+
+         #socials .fa{ 
+             margin-top: 20px;
+             margin-left: 5px;
          }
-         
+
+         #logo{
+             width:45%;
+             height:220px; 
+             margin-left: 10px;
+             margin-left: 55px;
+         }
+ 
         .fa {
           font-size: 25px;
           text-align: center;
@@ -60,10 +68,21 @@
         
          #bottom_nav li{
                display: inline-block;
+               font-size: 15px;
+         }
+             
+         .sf-menu li a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
+         }
+             
+         .sf-menu > li > a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
          }
          
          </style>
-     <script src="js/jquery.js"></script>
+     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/superfish.js"></script>
      <script src="js/jquery.easing.1.3.js"></script>
@@ -71,39 +90,19 @@
      <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
      <script>
 
-      
-     $(window).load (
-    function(){$('.carousel2').carouFredSel({auto: false,prev: '.prev1',next: '.next1', width: 410, items: {
-      visible : {min: 1,
-       max: 1
-},
-height: 'auto',
- width: 410,
-
-    }, responsive: false, 
-    
-    scroll: 1, 
-    
-    mousewheel: false,
-    
-    swipe: {onMouse: false, onTouch: false}});
+      $(function(){
+         
+          $('.js-tilt').tilt({
+              scale: 1.1
+          })
+          
+      });
+         
     
     
     });      
 
-     </script>
-     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link rel="stylesheet" media="screen" href="css/ie.css">
-
-    <![endif]-->
+     </script> 
      </head>
      <body>
        <div class="main">
@@ -113,7 +112,7 @@ height: 'auto',
      <div id="socials">
         <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
         <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
-          <a href="index.html"><img src="images/logo.png" id="logo" alt="EXTERIOR"></a> 
+         <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt" id="logo" alt="EXTERIOR"></a> 
      </div> 
      
     <div class="container_12">
@@ -249,14 +248,15 @@ Ringilla ipsum. Donec et nibh non turpis pellentesque suscipit eget vel odio. Se
                      </ul> 
                 </div>
       </div>
-       <footer>
-           <a href="http://www.ramotnof.co.il/" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
+       <footer style="font-size:13px;">
+           'כל הזכויות שמורות © לירדנה ויליג  
        </footer>
  
     </div>
     </div>
   </div>
 </div>
- 
+         <script src='js/tilt.jquery.min.js'></script> 
+
 </body>
 </html>
