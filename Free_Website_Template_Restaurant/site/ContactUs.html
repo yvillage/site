@@ -5,15 +5,16 @@
      <meta charset="utf-8">
      <link rel="icon" href="images/zimmerfavicon.ico">
      <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
-     <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/form.css">
      <link href="css/validetta.css" rel="stylesheet" type="text/css" media="screen" >
      <link rel="stylesheet" href="css/sweetalert2.min.css">
      <link rel="stylesheet" href="css/loader.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-iso.css">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
      <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         
+         <link rel="stylesheet" href="css/style.css">
+
          <style>
              
        .grid_7{
@@ -75,9 +76,8 @@
          
          #logo{
              width:45%;
-             height:220px; 
-             margin-left: 10px;
-             margin-left: 55px;
+             height:220px;  
+             margin-left: 20px; 
          }
  
          #contact{
@@ -91,12 +91,12 @@
          }
          
         .fa {
-          font-size: 25px;
-          text-align: center;
-          width: 45px;
-          height: 45px;
-          padding: 10px; 
-          border-radius: 50%;
+            font-size: 25px;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            padding: 10px; 
+            border-radius: 50%;
         }
 
         .fa:hover {
@@ -119,6 +119,52 @@
              font-family: 'Varela Round', sans-serif;
          }
              
+             /***************************************************/
+
+             .menu{
+                 background-color: #ffffb3;
+                 font-family: 'Varela Round', sans-serif;  
+             }
+
+             /*----- Top Level -----*/
+             .menu > ul > li {
+                 float:left;
+                 display:inline-block;
+                 position:relative;
+                 font-size:19px;
+                 margin: 15px;
+             }
+
+             .sub-menu li {  
+                 margin-top: 20px;
+             }
+             li a:hover{
+                 font-weight: bold;
+                 color: black;  
+                 text-decoration: underline;
+             } 
+
+             .current{
+                 background-color: red;
+                 border-radius: 25px;
+                 padding: 10px;
+                 color: white;
+             }
+
+             .sub{
+                 text-align: center
+             }
+
+             .sub-menu {
+                 width:150%;
+                 padding:25px;
+                 position:absolute; 
+                 right:0px; 
+                 display: none;
+                 background: #ffffb3;
+                 border-radius: 25px;
+             }
+             
          </style>
      <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="js/sweetalert2.min.js"></script>
@@ -128,6 +174,8 @@
      <script type="text/javascript" src="js/validetta.js"></script>
      <script type="text/javascript" src="js/validettaLang-tr-TR.js"></script>
      <script type="text/javascript" src="js/contactus.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
         <script>
             
             $(function(){
@@ -135,6 +183,21 @@
                 $('.js-tilt').tilt({
                     scale: 1.1
                 })
+                
+                $('.sub').mouseover(function(){
+
+                    $('.sub-menu').show("clip",300); 
+
+                });
+
+                $('.sub-menu').mouseleave(function(){
+                    $('.sub-menu').hide("clip",200); 
+                })  
+
+
+                $('li' ).not('li.sub').not('.sub-menu li').mouseover(function(){
+                    $('.sub-menu').hide("clip",200); 
+                });
                 
             });
             
@@ -158,26 +221,30 @@
          
     
          <div class="menu_block">
-           <nav  class="" >
-               <ul class="sf-menu">
-                    <li class="with_ul current"><a class="menutext" href="ContactUs.html">צור קשר</a></li>
-                   <li><a href="AboutUs.html">אודות</a></li>
-                   <li><a href="Recommends.html">המלצות אורחים</a></li>
-                <li><a href="Around.html">מה בסביבה</a><ul>
-                            <li><a href="b1.html">מסעדות</a></li>
-                            <li><a href="b2.html">טיולים</a></li>
-                            <li><a href="b3.html">בילויים</a></li>
-                   </ul></li>
-                   <li><a href="Spa.html">חבילת ספא</a></li>
-                   <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                   <li><a href="index.html">הבקתות</a><ul>
-                            <li><a href="b1.html">בקתה 1</a></li>
-                            <li><a href="b2.html">בקתה 2</a></li>
-                            <li><a href="b3.html">בקתה 3</a></li>
-                   </ul></li>
-                 
+             <nav class="menu">
+                 <ul class="clearfix">
+                     <li ><a href="ContactUs.html" >צור קשר</a></li>
+
+                     <li><a href="AboutUs.html">אודות</a></li>
+                     <li><a href="Recommends.html">המלצות אורחים</a></li>
+                     <li><a href="Around.html">מה בסביבה</a></li>
+
+                     <li><a href="Spa.html">חבילת ספא</a></li>
+                     <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                     <li class="sub">
+
+                         <a  href="#">בקתות</a>
+                         <ul class="sub-menu">
+                             <li><a href="b1.html">בקתה 1</a></li>
+                             <li><a href="b2.html">בקתה 2</a></li>
+                             <li><a href="b3.html">בקתה 3</a></li>
+                         </ul>
+
+                     </li>
+
+
                  </ul>
-              </nav>
+             </nav>
            <div class="clear"></div>
            </div>
            <div class="clear"></div>
@@ -186,14 +253,12 @@
 </header>
 <!--=======content================================-->
 
-<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
+<div class="content"> 
   <div class="container_12">
       
       <div id="contact">
 
-    
-          
-              <div class="grid_6">
+      <div class="grid_6 bootstrap-iso">
       <h2>מצא אותנו</h2>
             <div class="map">
             <figure class="img_inner">
@@ -221,7 +286,7 @@
           </div>
     </div>
 
-          <div class="grid_5 prefix_1">
+    <div class="grid_5 prefix_1 bootstrap-iso">
       <h2>צור קשר</h2>
       <form id="exm1">
           <div class="success_wrapper">
@@ -229,7 +294,7 @@
           <strong>נשמח לראותכם בין אורחינו!</strong> </div></div>
           <fieldset>
           <label class="name">
-          <input type="text" class="form-control" id="name" placeholder="שם" dir="rtl" data-validetta="regExp[regname],required">
+          <div><input type="text" class="form-control" id="name" style="" placeholder="שם" dir="rtl" data-validetta="regExp[regname],required"></div>
           <br class="clear">
           </label>
           <label class="email">
@@ -242,7 +307,6 @@
           </label>
           
           <textarea class="form-control" rows="6" id="msg" placeholder="הודעה" dir="rtl" data-validetta="required"></textarea> 
-          
          
           <div class="btns"> <button type="submit" class="btn btn-default">שלח</button>
         <div class="loader"></div>
@@ -272,7 +336,7 @@
                  </div>
 
                 <div id="bottom_nav"> 
-                       <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                       <li><a href="ContactUs.html">צור קשר</a></li>
                        <li><a href="AboutUs.html">קצת עלינו</a></li>
                        <li><a href="Recommends.html">המלצות אורחים</a></li>
                        <li><a href="Spa.html">חבילת ספא</a></li>
