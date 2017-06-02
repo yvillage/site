@@ -9,15 +9,34 @@
      <link rel="stylesheet" href="css/prettyPhoto.css">
      <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/viewbox.css">
      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="css/bottom.css"> 
          <style>
          
+         .portfolios{
+            text-align: center;
+             margin: 0 auto;
+            width: 1000px;
+         }
+         
+         .portfolios > a{
+            
+         }
+             
          #socials{ 
              position: absolute; 
              left: 25px;      
              display:flex; 
          }  
+             
+         header{
+             z-index: 2;
+         }
+
+         .viewbox-image{
+             z-index: 1     
+         }
 
          #socials .fa{ 
              margin-top: 20px;
@@ -90,13 +109,6 @@
              text-decoration: underline;
          } 
 
-         .current{
-             background-color: red;
-             border-radius: 25px;
-             padding: 10px;
-             color: white;
-         }
-
          .sub{
              text-align: center
          }
@@ -112,7 +124,7 @@
          }
              
          .current{
-             background-color: red;
+             background-color: #6fdc9d;
              border-radius: 25px;
              padding: 10px;
              color: white;
@@ -123,7 +135,7 @@
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/superfish.js"></script>
      <script src="js/jquery.easing.1.3.js"></script>
-     <script src="js/sForm.js"></script>
+     <script src="js/jquery.viewbox.min.js"></script>
      <script src="js/jquery.prettyPhoto.js"></script>
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script>
@@ -139,6 +151,8 @@
                  $('.sub-menu').show("clip",300); 
 
              });
+             
+             $('.image-link').viewbox(); 
 
              $('.sub-menu').mouseleave(function(){
                  $('.sub-menu').hide("clip",200); 
@@ -204,11 +218,11 @@
       <h2>Portfolio</h2>
     </div>
     <div class="clear"></div>
-    <div class="portfolio">
-      <div class="grid_6"><a href="images/big3.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img1.jpg" alt=""></a></div>
-      <div class="grid_6"><a href="images/big2.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img2.jpg" alt=""></a></div>
-      <div class="grid_6"><a href="images/big4.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img3.jpg" alt=""></a></div>
-      <div class="grid_6"><a href="images/big1.jpg" data-gal="prettyPhoto[1]"><span></span><img src="images/page4_img4.jpg" alt=""></a></div>
+    <div class="portfolios">
+         <a href="images/big3.jpg" class="image-link"><img src="images/page4_img1.jpg" alt=""></a> 
+         <a href="images/big2.jpg" class="image-link"><img src="images/page4_img2.jpg" alt=""></a> 
+         <a href="images/big4.jpg" class="image-link"><span></span><img src="images/page4_img3.jpg" alt=""></a>
+         <a href="images/big1.jpg" class="image-link"><img src="images/page4_img4.jpg" alt=""></a>
     </div>
     <div class="clear"></div>
     <div>  
