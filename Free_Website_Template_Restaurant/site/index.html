@@ -10,7 +10,9 @@
      <link rel="stylesheet" href="css/slider.css">
      <link rel='stylesheet' href='css/camera.css'>
      <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     
      <style>
          
          @media only screen and (max-width: 365px) {
@@ -31,7 +33,8 @@
          }
          
          .menu_block{
-            min-width: 300px;    
+            min-width: 300px;  
+            font-family: 'Varela Round', sans-serif;
          }
                   
         #camera_wrap{
@@ -43,9 +46,8 @@
          
          #logo{
              width:45%;
-             height:220px; 
-             margin-left: 10px;
-             margin-left: 55px;
+             height:220px;  
+             margin-left: 20px; 
          }
          
          .grid_7{
@@ -123,9 +125,79 @@
              margin-left: 15px;
          }
         
-         #bottom_nav li{
+         #bottom_nav li{ 
                display: inline-block;
          }
+         
+         #bottom_nav{
+             font-size: 15px;
+         }
+         
+         
+         .sf-menu li a{
+             font-size: 18px;
+             font-family: 'Varela Round', sans-serif;
+         }
+      
+         /***************************************************/
+         
+         .menu{
+             background-color: #ffffb3;
+             font-family: 'Varela Round', sans-serif;  
+         }
+
+         /*----- Top Level -----*/
+         .menu > ul > li {
+             float:left;
+             display:inline-block;
+             position:relative;
+             font-size:19px;
+             margin: 15px;
+
+         }
+
+         .sub-menu li {  
+             margin-top: 20px;
+         }
+         li a:hover{
+             font-weight: bold;
+             color: black;  
+             text-decoration: underline;
+         } 
+         
+         .current{
+             background-color: red;
+             border-radius: 25px;
+             padding: 10px;
+             color: white;
+         }
+         
+
+         /*
+         .menu li:hover .sub-menu {
+         z-index:1;
+         opacity:1;
+         width: 100px;
+         text-align: center
+         }
+         */
+
+         .sub{
+             text-align: center
+         }
+
+         .sub-menu {
+             width:150%;
+             padding:25px;
+             position:absolute; 
+             right:0px; 
+             display: none;
+             background: #ffffb3;
+             border-radius: 25px;
+         }
+
+        
+         
          
      </style>
      <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
@@ -134,6 +206,8 @@
      <script src="js/sForm.js"></script>
      <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
      <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+     <script type='text/javascript' src='js/tilt.jquery.min.js'></script> 
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script src="js/camera.min.js"></script>
          <script>
             $(function(){
@@ -141,23 +215,31 @@
                   jQuery('#camera_wrap').camera({
                     height: '41%',
                     thumbnails: true, 
-			      }); 
+                  }); 
+
+                  $('.js-tilt').tilt({
+                    scale: 1.1
+                  })
+                
+                $('.sub').mouseover(function(){
+
+                    $('.sub-menu').show("clip",300); 
+
+                });
+
+                $('.sub-menu').mouseleave(function(){
+                    $('.sub-menu').hide("clip",200); 
+                })  
+
+
+                $('li' ).not('li.sub').not('.sub-menu li').mouseover(function(){
+                    $('.sub-menu').hide("clip",200); 
+                });
+
                 
             });
          </script>
-     
-     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link rel="stylesheet" media="screen" href="css/ie.css">
-
-    <![endif]-->
+         
      </head>
      <body>
    
@@ -175,13 +257,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
  
-         
      <div id="socials" >
          <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook"  target="_blank"></a>
          <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube"  style="vertical-align: middle"  target="_blank"></a>
-         <a href="index.html"><img src="images/logo2.png" class="deviceWidth2" id="logo" alt="EXTERIOR"></a>
+         <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt deviceWidth2" id="logo" alt="EXTERIOR"></a>
      </div>
-     
      <div class="container_12 deviceWidth3">
     
          <div class="grid_12 deviceWidth3">
@@ -189,26 +269,29 @@
 <!--    <h1>   <a href="index.html"><img src="images/logo.png" id="logo" alt="EXTERIOR"></a></h1>-->
     
          <div class="menu_block menu_resp">
-           <nav >
-            <ul class="sf-menu">
-                   <li><a class="menutext" href="ContactUs.html">צור קשר</a></li>
+             <nav class="menu">
+               <ul class="clearfix">
+                   <li ><a href="ContactUs.html" >צור קשר</a></li>
+
                    <li><a href="AboutUs.html">אודות</a></li>
                    <li><a href="Recommends.html">המלצות אורחים</a></li>
-                 <li><a href="Around.html">מה בסביבה</a><ul>
-                            <li><a href="b1.html">מסעדות</a></li>
-                            <li><a href="b2.html">טיולים</a></li>
-                            <li><a href="b3.html">בילויים</a></li>
-                   </ul></li>
+                   <li><a href="Around.html">מה בסביבה</a></li>
+
                    <li><a href="Spa.html">חבילת ספא</a></li>
                    <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                   <li  class="current"><a href="index.html">הבקתות</a><ul>
-                            <li><a href="b1.html">בקתה 1</a></li>
-                            <li><a href="b2.html">בקתה 2</a></li>
-                            <li><a href="b3.html">בקתה 3</a></li>
-                   </ul></li>
-                
-                 
-                 </ul>
+                   <li class="sub">
+
+                       <a  href="#">בקתות</a>
+                       <ul class="sub-menu">
+                           <li><a href="b1.html">בקתה 1</a></li>
+                           <li><a href="b2.html">בקתה 2</a></li>
+                           <li><a href="b3.html">בקתה 3</a></li>
+                       </ul>
+
+                   </li>
+             
+
+               </ul>
               </nav>
            <div class="clear"></div>
            </div>
@@ -299,7 +382,7 @@
         
                 <div id="bottom_nav">
                      <ul>
-                       <li class="current"><a href="ContactUs.html">צור קשר</a></li>
+                       <li><a href="ContactUs.html">צור קשר</a></li>
                        <li><a href="AboutUs.html">קצת עלינו</a></li>
                        <li><a href="Recommends.html">המלצות אורחים</a></li>
                        <li><a href="Spa.html">חבילת ספא</a></li>
@@ -308,15 +391,20 @@
                      </ul> 
                 </div>
       </div>
+<<<<<<< HEAD
        <footer>
            <a href="#" class="allRight">'כל הזכויות שמורות © לירדנה ויליג  </a>
+=======
+       <footer style="font-size:13px;">
+           'כל הזכויות שמורות © לירדנה ויליג  
+>>>>>>> master
        </footer>
  
     </div>
   </div>
 </div>
 
-         
+ 
 </body>
 
 </html>
