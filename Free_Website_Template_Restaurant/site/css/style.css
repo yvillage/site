@@ -186,7 +186,7 @@ a.btn.m1 {
 }
 .wrapper, .extra_wrapper {
 	overflow: hidden;
-    direction: rtl;
+    direction: center;
    
     
 }
