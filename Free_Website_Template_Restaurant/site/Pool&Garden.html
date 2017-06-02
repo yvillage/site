@@ -1,289 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-     <title>בריכה וחצר |ירדנה ויליג'</title>
-     <meta charset="utf-8">
-     <link rel="icon" href="images/zimmerfavicon.ico">
-     <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
-     <link rel="stylesheet" href="css/style.css">
-     <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-     <link rel="stylesheet" href="css/bottom.css"> 
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-         <style>
-         
-         #socials{ 
-             position: absolute; 
-             left: 25px;      
-             display:flex; 
-         }  
+    <head>
+        <title>בקתה 1 | ירדנה ויליג'</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/zimmerfavicon.ico">
+        <link rel="shortcut icon" href="images/zimmerfavicon.ico" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/viewbox.css">
+        <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="css/bottom.css"> 
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <style>
 
-         #socials .fa{ 
-             margin-top: 20px;
-             margin-left: 5px;
-         }
+            .b1_info{
+                width: 940px;
+                margin: auto;
+                text-align: center;
+                font-family: 'Varela Round', sans-serif;
+            }
 
-         #logo{
-             width:45%;
-             height:220px;  
-             margin-left: 20px; 
-         }
-         
-        .fa {
-          font-size: 25px;
-          text-align: center;
-          width: 25px;
-          height: 25px;
-          padding: 10px; 
-          border-radius: 50%;
-        }
-
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        .fa-facebook {
-          background: #3B5998;
-          color: white; 
-        }
+            .pic{
+                margin: 5px;
+            } 
 
 
-        .fa-youtube {
-          background: #bb0000;
-          color: white; 
-        }
-         
-         .sf-menu li a{
-             font-size: 18px;
-             font-family: 'Varela Round', sans-serif;
-         }
-             
-         #bottom_nav li{
-             display: inline-block;
-             font-size: 15px;
-         }
-             
-         /***************************************************/
+            header{
+                z-index: 2;
+            }
 
-         .menu{
-             background-color: #D5F5E3;
-             font-family: 'Varela Round', sans-serif;  
-         }
+            .viewbox-image{
+                z-index: 1     
+            }
 
-         /*----- Top Level -----*/
-         .menu > ul > li {
-             float:left;
-             display:inline-block;
-             position:relative;
-             font-size:19px;
-             margin: 15px;
-         }
+            .owl-nav{
+                text-align: center;
+                -webkit-tap-highlight-color: transparent;
 
-         .sub-menu li {  
-             margin-top: 20px;
-         }
-         li a:hover{
-             font-weight: bold;
-             color: black;  
-             text-decoration: underline;
-         } 
+            }
 
-         .current{
-             background-color: red;
-             border-radius: 25px;
-             padding: 10px;
-             color: white;
-         }
+            .owl-next:hover{
+                background: gray;
+            }  
+            .owl-prev:hover{
+                background: gray;
+            }
 
-         .sub{
-             text-align: center
-         }
+            .owl-next{ 
+                color: black;
+                font-size: 22px;
+                width: 30px;
+                margin: 5px;
+                padding: 6px 16px;
+                background: #D6D6D6;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 3px;
+            }
 
-         .sub-menu {
-             width:150%;
-             padding:25px;
-             position:absolute; 
-             right:0px; 
-             display: none;
-             background: #D5F5E3;
-             border-radius: 25px;
-         }
-             
-         .current{
-             background-color: red;
-             border-radius: 25px;
-             padding: 10px;
-             color: white;
-         }
-             
-         </style>
-     <script src="js/jquery.js"></script>
-     <script src="js/jquery-migrate-1.1.1.js"></script>
-     <script src="js/superfish.js"></script>
-     <script src="js/jquery.easing.1.3.js"></script>
-     <script src="js/tilt.jquery.min.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-     <script>
-     
-        $(function(){
-            $('.js-tilt').tilt({
-                scale: 1.1
-            })  
-            
-            $('.sub').mouseover(function(){
+            .owl-prev{
+                color: black;
+                font-size: 22px;
+                width: 30px;
+                margin: 5px;
+                padding: 6px 16px;
+                background: #D6D6D6;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 3px;
+            }
 
-                $('.sub-menu').show("clip", 300); 
+            #socials{ 
+                position: absolute; 
+                left: 25px;      
+                display:flex; 
+            }  
 
-            });
+            #socials .fa{ 
+                margin-top: 20px;
+                margin-left: 5px;
+            }
 
-            $('.sub-menu').mouseleave(function(){
-                $('.sub-menu').hide("clip", 200); 
-            })  
+            #logo{
+                width:45%;
+                height:220px;  
+                margin-left: 20px; 
+            }
+
+            .owl-carousel{
+                margin-top: 30px; 
+            }
+
+            .fa {
+                font-size: 25px;
+                text-align: center;
+                width: 25px;
+                height: 25px;
+                padding: 10px; 
+                border-radius: 50%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white; 
+            }
 
 
-            $('li' ).not('li.sub').not('.sub-menu li').mouseover(function(){
-                $('.sub-menu').hide("clip", 200); 
-            });
-            
-        });
-         
-     </script>
-     </head>
-     <body>
-       <div class="main">
-<!--==============================header=================================-->
- <header> 
-     
-     <div id="socials">
-        <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
-        <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
-          <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt" id="logo" alt="EXTERIOR"></a>  
-     </div> 
-     
-  <div class="container_12">
-      
-    <div class="grid_12">
-         
-    
-         <div class="menu_block">
-             <nav class="menu">
-                 <ul class="clearfix">
-                     <li ><a href="ContactUs.html" >צור קשר</a></li>
-                     <li><a href="AboutUs.html">אודות</a></li>
-                     <li><a href="Recommends.html">המלצות אורחים</a></li>
-                     <li><a href="Around.html">מה בסביבה</a></li>
-                     <li><a href="Spa.html">חבילת ספא</a></li>
-                     <li><a href="Pool&Garden.html" class="current">הבריכה והחוץ</a></li>
-                     <li class="sub">
+            .fa-youtube {
+                background: #bb0000;
+                color: white; 
+            }
 
-                         <a  href="#">בקתות</a>
-                         <ul class="sub-menu" style="z-index: -1">
-                             <li><a href="b1.html">בקתה 1</a></li>
-                             <li><a href="b2.html">בקתה 2</a></li>
-                             <li><a href="b3.html">בקתה 3</a></li>
-                         </ul>
+            #bottom_nav li{
+                display: inline-block;
+                font-size: 15px;
+            }
 
-                     </li>
+            .sf-menu li a{
+                font-size: 18px;
+                font-family: 'Varela Round', sans-serif;
+            }
+
+            /***************************************************/
+
+            .menu{
+                background-color: #D5F5E3;
+                font-family: 'Varela Round', sans-serif;  
+            }
+
+            /*----- Top Level -----*/
+            .menu > ul > li {
+                float:left;
+                display:inline-block;
+                position:relative;
+                font-size:19px;
+                margin: 15px;
+            }
+
+            .sub-menu li {  
+                margin-top: 20px;
+            }
+            li a:hover{
+                font-weight: bold;
+                color: black;  
+                text-decoration: underline;
+            } 
+
+            .sub{
+                text-align: center
+            }
+
+            .sub-menu {
+                width:150%;
+                padding:25px;
+                position:absolute; 
+                right:0px; 
+                display: none;
+                background: #D5F5E3;
+                border-radius: 25px;
+            }
+
+            .current{
+                background-color: #6fdc9d;
+                border-radius: 25px;
+                padding: 10px;
+                color: white;
+            }
+
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/jquery-migrate-1.1.1.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/owl.carousel.min.js"></script> 
+        <script src="js/jquery.viewbox.min.js"></script>
+        <script src="js/tilt.jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    nav: true
+                });   
+
+                $('.image-link').viewbox(); 
 
 
-                 </ul>
-             </nav>
-           <div class="clear"></div>
-           </div>
-           <div class="clear"></div>
-      </div>
-    </div>
-</header>
-<!--=======content================================-->
+                $('.js-tilt').tilt({
+                    scale: 1.1
+                }) 
 
-<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 13, 2013!</div>
-  <div class="container_12">
-    <div class="grid_7">
-      <h2 class="head2">Latest News</h2>
-      <div class="news">
-        <img src="images/page5_img1.jpg" alt="" class="img_inner fleft">
-        <div class="extra_wrapper">
-          <div class="col1">Aenean nonummy hendrerit mau rellus porta. Fusce suscipit varius m sociis natoque penaibet mapaturent. </div>
-          <p>Montes nasetur ridiculumula dui. Fusce feugiatlesuada o krjg fdio. Morbi nusem. GIoadscs lkierhdc v hfrjgDuis ultricies pharetra magna. Donec accusan mal esuada orcec sit amet eros.   </p>
-          <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed oreetliquam tellus dolor elementum vel cursus eleife. agna. Donec accumsan malesuada orcec sit amet </p>
-          <a href="#" class="btn">More</a>
-        </div>
-      </div>
-      <div class="news mb0">
-        <img src="images/page5_img2.jpg" alt="" class="img_inner fleft">
-        <div class="extra_wrapper">
-          <div class="col1">Nuinean nonummy hendrerit mau rellus porta. Fusce varius m sociis natoque penaibet magni partur.</div>
-          <p>Ent montes nasetur ridiculumula dui. KHgsce feugiat malesuada o krjg fdio. Joorbi nusem. GIoadscs lkierdc vhfrujgDuis ultricies pharetra magna. Donec accumsan masuada orcec sit amet eros.   </p>
-          <p>Hioasrem ipsum dolor sit amet consectetuer adiscing elit. Mauris fermentum dictum magna. Ed oreetliquam tellus dolor dapibus eget elementum vel cursus eleife. agna. Donec accumsan malesuada orcec sit amrbi. </p>
-          <a href="#" class="btn">More</a>
-        </div>
-      </div>
-    </div>
-    <div class="grid_3 prefix_2">
-      <h2 class="head2">Categories</h2>
-      <ul class="list l1">
-        <li><a href="#">Vivamus vulputate est</a></li>
-        <li><a href="#">Aniivamus vulputate </a></li>
-        <li><a href="#">Nam blandit metus</a></li>
-        <li><a href="#">Mltam blandit metuju</a></li>
-        <li><a href="#">Pellentesque vitae sem odio</a></li>
-        <li><a href="#">Pellen miofju </a></li>
-        <li><a href="#">Lorem ipsum </a></li>
-        <li><a href="#">Nam at neque dictum</a></li>
-        <li><a href="#">Mloam at neque </a></li>
-      </ul>
-      <h2 class="head2">Archive</h2>
-      <ul class="list">
-        <li><a href="#">September 2012</a></li>
-        <li><a href="#">August 2012</a></li>
-        <li><a href="#">July 2012</a></li>
-        <li><a href="#">June 2012</a></li>
-        <li><a href="#">May 2012</a></li>
-        <li><a href="#">April 2012</a></li>
-        <li><a href="#">March 2012</a></li>
-        <li><a href="#">February 2012</a></li>
-        <li><a href="#">January 2012</a></li>
-      </ul>
-    </div>
-    <div class="clear"></div>
-   
-       <div>  
+                $('.sub').mouseover(function(){
 
-   <!--==============================footer=================================-->
+                    $('.sub-menu').show("clip",300); 
 
-    <div class="clear"></div>
-    <div class="bottom_block">
-        
-         <div class="socials_bottom">
-            
-             <div>
-                
-                 <a href="waze://?ll=32.932429,35.352057" target="_blank"><img src="images/waze.png"></a>
-                 <a href="https://www.facebook.com/yardenavillage/" target="_blank"><img src="images/facebookfooter.png"></a>
-                 <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" target="_blank"><img src="images/youtubefooter.png"></a>
-                 <h3>עקבו אחרינו</h3>
-             </div>
-         </div>
-        
-                <div id="bottom_nav">
-                     <ul>
-                       <li><a href="ContactUs.html">צור קשר</a></li>
-                       <li><a href="AboutUs.html">קצת עלינו</a></li>
-                       <li><a href="Recommends.html">המלצות אורחים</a></li>
-                       <li><a href="Spa.html">חבילת ספא</a></li>
-                       <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
-                       <li><a href="index.html">בית</a></li>
-                     </ul> 
+                });
+
+                $('.sub-menu').mouseleave(function(){
+                    $('.sub-menu').hide("clip",200); 
+                })  
+
+
+                $('li' ).not('li.sub').not('.sub-menu li').mouseover(function(){
+                    $('.sub-menu').hide("clip",200); 
+                });
+
+            });    
+
+        </script>  
+    </head>
+    <body>
+        <div class="main">
+            <!--==============================header=================================-->
+            <header> 
+
+                <div id="socials">
+                    <a href="https://www.facebook.com/yardenavillage/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" class="fa fa-youtube" target="_blank"></a>
+                    <a href="index.html"><img src="images/logo2.png" data-tilt class="js-tilt" id="logo" alt="EXTERIOR"></a>  
+                </div> 
+
+                <div class="container_12">
+
+                    <div class="grid_12">
+
+                        <div class="menu_block">
+                            <nav class="menu">
+                                <ul class="clearfix">
+                                    <li ><a href="ContactUs.html" >צור קשר</a></li>
+                                    <li><a href="AboutUs.html">אודות</a></li>
+                                    <li><a href="Recommends.html">המלצות אורחים</a></li>
+                                    <li><a href="Around.html">מה בסביבה</a></li>
+                                    <li><a href="Spa.html">חבילת ספא</a></li>
+                                    <li><a class="current" href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                                    <li class="sub">
+
+                                        <a href="#">בקתות</a>
+                                        <ul class="sub-menu" style="z-index: -1">
+                                            <li><a href="b1.html">בקתה 1</a></li>
+                                            <li><a href="b2.html">בקתה 2</a></li>
+                                            <li><a href="b3.html">בקתה 3</a></li>
+                                        </ul>
+
+                                    </li>
+
+
+                                </ul>
+                            </nav>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
-      </div>
-           <footer style="font-size:13px;">
-               'כל הזכויות שמורות © לירדנה ויליג  
-           </footer>
- 
-    </div>
-    </div>
-  </div>
-</div>
-         <script src='js/tilt.jquery.min.js'></script> 
-</body>
+            </header>
+            <!--=======content================================-->
+
+            <div class="content"> 
+                <div class="container_12">
+
+                    <div class="owl-carousel">
+                        <div class="pic"> <a href="images/slideshow-images/b1/5.jpg" class="image-link"> <img src="images/slideshow-images/b1/5.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/8.jpg" class="image-link"> <img src="images/slideshow-images/b1/8.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/1.jpg" class="image-link"> <img src="images/slideshow-images/b1/1.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/2.jpg" class="image-link"> <img src="images/slideshow-images/b1/2.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/6.jpg" class="image-link"> <img src="images/slideshow-images/b1/6.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/3.jpg" class="image-link"> <img src="images/slideshow-images/b1/3.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/4.jpg" class="image-link"> <img src="images/slideshow-images/b1/4.jpg"> </a></div>
+                        <div class="pic"> <a href="images/slideshow-images/b1/7.jpg" class="image-link"> <img src="images/slideshow-images/b1/7.jpg"> </a></div>
+
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="b1_info">
+                        <div class="hor_separator hor1"></div>
+                        <h2 class="head1">הבריכה והחוץ</h2>
+                        <div class="clear"></div>
+                        <div>
+                            <h1 style="font-family: 'Varela Round', sans-serif;">שלום</h1>
+                        </div>
+
+                        <!--==============================footer=================================-->
+
+                        <div class="clear"></div>
+                        <div>   
+                            <div class="bottom_block">
+
+                                <div class="socials_bottom">
+
+                                    <div>
+
+                                        <a href="waze://?ll=32.932429,35.352057" target="_blank"><img src="images/waze.png"></a>
+                                        <a href="https://www.facebook.com/yardenavillage/" target="_blank"><img src="images/facebookfooter.png"></a>
+                                        <a href="https://www.youtube.com/watch?v=2Fab9QcWYAk" target="_blank"><img src="images/youtubefooter.png"></a>
+                                        <h3>עקבו אחרינו</h3>
+                                    </div>
+                                </div>
+
+                                <div id="bottom_nav">
+                                    <ul>
+                                        <li><a href="ContactUs.html">צור קשר</a></li>
+                                        <li><a href="AboutUs.html">קצת עלינו</a></li>
+                                        <li><a href="Recommends.html">המלצות אורחים</a></li>
+                                        <li><a href="Spa.html">חבילת ספא</a></li>
+                                        <li><a href="Pool&Garden.html">הבריכה והחוץ</a></li>
+                                        <li><a href="index.html">בית</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <footer style="font-size:13px;">
+                                'כל הזכויות שמורות © לירדנה ויליג  
+                            </footer>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script src='js/tilt.jquery.min.js'></script> 
+        </div>
+    </body>
 </html>
